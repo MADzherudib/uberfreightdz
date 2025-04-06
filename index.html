@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freight Booking</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Freight Booking</h1>
+      <nav>
+        <ul>
+          <li><a href="#book-now">Book Now</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Revolutionizing Freight Booking</h2>
+      <p>Connect with carriers and book your freight easily.</p>
+      <a href="#book-now" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section id="book-now" class="booking">
+    <div class="container">
+      <h2>Book Your Freight</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="departure">Departure Location:</label>
+          <input type="text" id="departure" placeholder="Enter departure address" required />
+        </div>
+        <div class="form-group">
+          <label for="arrival">Arrival Location:</label>
+          <input type="text" id="arrival" placeholder="Enter arrival address" required />
+        </div>
+        <div class="form-group">
+          <label for="datetime">Select Date & Time:</label>
+          <input type="text" id="datetime" placeholder="Choose date and time" required />
+        </div>
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+
+      <div id="map"></div>
+      <p id="route-info">Distance: - | Duration: -</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are dedicated to making freight transportation easier and more efficient for everyone.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: support@freightbooking.com</p>
+      <p>Phone: 1-800-555-0199</p>
+    </div>
+  </footer>
+
+  <script>
+   
+  </script>
+
+<script src="script.js"></script>
+</body>
+</html>
