@@ -22,7 +22,7 @@ async function drawRoute(from, to) {
       [to.lng, to.lat]
     ]
   };
-
+// test
   const res = await fetch('https://api.openrouteservice.org/v2/directions/driving-car/geojson', {
     method: 'POST',
     headers: {
